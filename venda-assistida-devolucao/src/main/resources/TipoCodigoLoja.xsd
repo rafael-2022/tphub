@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.dieboldnixdorf.com/frentecaixa/TipoCodigoLoja" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.dieboldnixdorf.com/frentecaixa/TipoCodigoLoja">
+
+    <complexType name="CodigoLojaType">
+    	<sequence>
+    		<element name="codigoLoja">
+    			<simpleType>
+    				<restriction base="string">
+    					<maxLength value="4"></maxLength>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+</schema>

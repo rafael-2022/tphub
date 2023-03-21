@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/clientes-dados-loja/clientes-dados-loja.iml" filepath="$PROJECT_DIR$/clientes-dados-loja/clientes-dados-loja.iml" />
+      <module fileurl="file://$PROJECT_DIR$/conciliacao-sva/conciliacao-sva.iml" filepath="$PROJECT_DIR$/conciliacao-sva/conciliacao-sva.iml" />
+      <module fileurl="file://$PROJECT_DIR$/descontos-rebaixa-preco/descontos-rebaixa-preco.iml" filepath="$PROJECT_DIR$/descontos-rebaixa-preco/descontos-rebaixa-preco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/descontos-socio-torcedor/descontos-socio-torcedor.iml" filepath="$PROJECT_DIR$/descontos-socio-torcedor/descontos-socio-torcedor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/descontos-tef-promocao/descontos-tef-promocao.iml" filepath="$PROJECT_DIR$/descontos-tef-promocao/descontos-tef-promocao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fiscais-piscofins-pdv/fiscais-piscofins-pdv.iml" filepath="$PROJECT_DIR$/fiscais-piscofins-pdv/fiscais-piscofins-pdv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fiscais-transacoes-ecf/fiscais-transacoes-ecf.iml" filepath="$PROJECT_DIR$/fiscais-transacoes-ecf/fiscais-transacoes-ecf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fiscais-transacoes-ecf-aliquota/fiscais-transacoes-ecf-aliquota.iml" filepath="$PROJECT_DIR$/fiscais-transacoes-ecf-aliquota/fiscais-transacoes-ecf-aliquota.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lojas-dados-operadoras/lojas-dados-operadoras.iml" filepath="$PROJECT_DIR$/lojas-dados-operadoras/lojas-dados-operadoras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movimentacoes-pdv-balcao/movimentacoes-pdv-balcao.iml" filepath="$PROJECT_DIR$/movimentacoes-pdv-balcao/movimentacoes-pdv-balcao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movimentacoes-sangria-pdv/movimentacoes-sangria-pdv.iml" filepath="$PROJECT_DIR$/movimentacoes-sangria-pdv/movimentacoes-sangria-pdv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movimentacoes-transacoes-pdv/movimentacoes-transacoes-pdv.iml" filepath="$PROJECT_DIR$/movimentacoes-transacoes-pdv/movimentacoes-transacoes-pdv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movimentacoes-transacoes-pdv-online/movimentacoes-transacoes-pdv-online.iml" filepath="$PROJECT_DIR$/movimentacoes-transacoes-pdv-online/movimentacoes-transacoes-pdv-online.iml" />
+      <module fileurl="file://$PROJECT_DIR$/produtividade/produtividade.iml" filepath="$PROJECT_DIR$/produtividade/produtividade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storemap/storemap.iml" filepath="$PROJECT_DIR$/storemap/storemap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tphub.iml" filepath="$PROJECT_DIR$/tphub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trocas-dados-devolucao/trocas-dados-devolucao.iml" filepath="$PROJECT_DIR$/trocas-dados-devolucao/trocas-dados-devolucao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trocas-devolucao-contabil/trocas-devolucao-contabil.iml" filepath="$PROJECT_DIR$/trocas-devolucao-contabil/trocas-devolucao-contabil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/venda-assistida-devolucao/venda-assistida-devolucao.iml" filepath="$PROJECT_DIR$/venda-assistida-devolucao/venda-assistida-devolucao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vendas-contabil/vendas-contabil.iml" filepath="$PROJECT_DIR$/vendas-contabil/vendas-contabil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vendas-diarias-consolidadas/vendas-diarias-consolidadas.iml" filepath="$PROJECT_DIR$/vendas-diarias-consolidadas/vendas-diarias-consolidadas.iml" />
+    </modules>
+  </component>
+</project>

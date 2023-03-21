@@ -1,0 +1,70 @@
+package com.dieboldnixdorf.frentecaixa.security;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
+import com.dieboldnixdorf.frentecaixa.security.rfc7519.JWTAuthenticationFilter;
+import com.dieboldnixdorf.frentecaixa.security.rfc7519.JWTLoginFilter;
+
+
+/**
+ * The Class WebSecurityConfig.
+ */
+@Configuration
+@EnableWebSecurity
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
+	/**
+	 * {@inheritDoc}
+	 */
+    @Override
+    protected void configure(final HttpSecurity http) throws Exception {
+        http.headers().cacheControl();
+        http.csrf().disable() 
+        .authorizeRequests()
+        .antMatchers("/", 
+    			"/v2/api-docs", 
+    			"/health", 
+    			"/configuration/ui", 
+    			"/swagger-resources", 
+    			"/configuration/security", 
+    			"/swagger-ui.html", 
+    			"/webjars/**","/swagger-resources/configuration/ui","/swagge‌​r-ui.html").permitAll()
+        .antMatchers(HttpMethod.POST,"/login").permitAll()
+        .anyRequest().authenticated()
+        .and()
+        .addFilterBefore(new JWTLoginFilter("/login", authenticationManager()), UsernamePasswordAuthenticationFilter.class)
+        .addFilterBefore(new JWTAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
+    }
+
+	/**
+	 * {@inheritDoc}
+	 */
+    @Override
+    protected void configure(final AuthenticationManagerBuilder auth) throws Exception{
+   /*/     auth.inMemoryAuthentication()
+                .withUser("carrefour81")
+                .password("2895d35d852bf0c7f0e842e02df2bfa2")
+                .roles("ADMIN");*/
+   
+           auth.inMemoryAuthentication()
+                .withUser("carrefour41")
+                .password("egwX2M9yQc6exmcDUOk1GKSyjsrPp")
+                .roles("ADMIN");
+    }
+
+	/**
+	 * {@inheritDoc}
+	 */
+    @Override
+    public void configure(final WebSecurity web) throws Exception {
+        web.ignoring().antMatchers("/v2/api-docs", "/configuration/ui", "/swagger-resources", "/configuration/security", "/swagger-ui.html", "/webjars/**");
+    }
+
+}

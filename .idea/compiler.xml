@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="movimentacoes-pdv-balcao" />
+        <module name="storemap" />
+        <module name="clientes-dados-loja" />
+        <module name="descontos-tef-promocao" />
+        <module name="vendas-contabil" />
+        <module name="fiscais-transacoes-ecf-aliquota" />
+        <module name="fiscais-piscofins-pdv" />
+        <module name="fiscais-transacoes-ecf" />
+        <module name="descontos-socio-torcedor" />
+        <module name="descontos-rebaixa-preco" />
+        <module name="movimentacoes-transacoes-pdv-online" />
+        <module name="produtividade" />
+        <module name="conciliacao-sva" />
+        <module name="movimentacoes-transacoes-pdv" />
+        <module name="lojas-dados-operadoras" />
+        <module name="venda-assistida-devolucao" />
+        <module name="vendas-diarias-consolidadas" />
+        <module name="movimentacoes-sangria-pdv" />
+        <module name="trocas-devolucao-contabil" />
+        <module name="trocas-dados-devolucao" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="clientes-dados-loja" target="1.8" />
+      <module name="conciliacao-sva" target="1.8" />
+      <module name="descontos-rebaixa-preco" target="1.8" />
+      <module name="descontos-socio-torcedor" target="1.8" />
+      <module name="descontos-tef-promocao" target="1.8" />
+      <module name="fiscais-piscofins-pdv" target="1.8" />
+      <module name="fiscais-transacoes-ecf" target="1.8" />
+      <module name="fiscais-transacoes-ecf-aliquota" target="1.8" />
+      <module name="lojas-dados-operadoras" target="1.8" />
+      <module name="movimentacoes-pdv-balcao" target="1.8" />
+      <module name="movimentacoes-sangria-pdv" target="1.8" />
+      <module name="movimentacoes-transacoes-pdv" target="1.8" />
+      <module name="movimentacoes-transacoes-pdv-online" target="1.8" />
+      <module name="produtividade" target="1.8" />
+      <module name="storemap" target="1.8" />
+      <module name="tphub" target="1.8" />
+      <module name="trocas-dados-devolucao" target="1.8" />
+      <module name="trocas-devolucao-contabil" target="1.8" />
+      <module name="venda-assistida-devolucao" target="1.8" />
+      <module name="vendas-contabil" target="1.8" />
+      <module name="vendas-diarias-consolidadas" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

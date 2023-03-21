@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/clientes-dados-loja/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/conciliacao-sva/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/descontos-rebaixa-preco/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/descontos-socio-torcedor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/descontos-tef-promocao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fiscais-piscofins-pdv/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fiscais-transacoes-ecf-aliquota/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fiscais-transacoes-ecf/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lojas-dados-operadoras/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/movimentacoes-pdv-balcao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/movimentacoes-sangria-pdv/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/movimentacoes-transacoes-pdv-online/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/movimentacoes-transacoes-pdv/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/produtividade/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/storemap/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trocas-dados-devolucao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trocas-devolucao-contabil/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/venda-assistida-devolucao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vendas-contabil/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vendas-diarias-consolidadas/src/main/java" charset="UTF-8" />
+  </component>
+</project>

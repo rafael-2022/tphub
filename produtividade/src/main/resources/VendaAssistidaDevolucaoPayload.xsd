@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.dieboldnixdorf.com/frentecaixa/VendaAssistidaDevolucaoPayload" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.dieboldnixdorf.com/frentecaixa/VendaAssistidaDevolucaoPayload">
+
+	<complexType name="VendaAssistidaDevolucaoPayloadType">
+		<sequence>
+			<element name="tipoDev" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>
+						Tipo de Devolução - DR
+					</documentation>
+				</annotation>
+				<simpleType>
+					<restriction base="string"> 
+						<maxLength value="5"/>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name="numDocto" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>
+						Número do documento - Número da transação no balcão
+					</documentation>
+				</annotation>
+				<simpleType>
+					<restriction base="int"> 
+						<maxInclusive value="999999"/>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name="numPreOrder" type="long" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>
+						Número Pré-order
+					</documentation>
+				</annotation>
+			</element>
+
+			<element name="numPDV" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>
+						Número do ECF - Número do PDV que a transação foi finalizada.
+					</documentation>
+				</annotation>
+				<simpleType>
+					<restriction base="int"> 
+						<maxInclusive value="255"/>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name="codOper" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>
+						Código da Operadora - Número do DRT da Operadora
+					</documentation>
+				</annotation>
+				<simpleType>
+					<restriction base="int"> 
+						<maxInclusive value="9999999999"/>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name="codVend" minOccurs="0" maxOccurs="1">
+				<annotation>
+					<documentation>
+						Código do Vendedor - Numérico (Preencher em caso de transação Manual ou off-line)
+					</documentation>
+				</annotation>
+				<simpleType>
+					<restriction base="int"> 
+						<maxInclusive value="9999999999"/>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name="tipoServ" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>
+						Tipo de Serviço - (a definir entre SVA/CVA/PDV. Premissa: valor entre 0 e 255)
+						Exemplos:
+							“001” – recebimento garantia
+							“002” – recebimento musica
+							“003” – recebimento instalação
+							“XXX” – recebimento x
+					</documentation>
+				</annotation>
+				<simpleType>
+					<restriction base="int"> 
+						<maxInclusive value="255"/>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name="codProd" type="long" minOccurs="0" maxOccurs="1">
+				<annotation>
+					<documentation>
+						Código do Produto - Código do produto associado ao Serviço
+					</documentation>
+				</annotation>
+			</element>
+
+			<element name="codServ" minOccurs="0" maxOccurs="1">
+				<annotation>
+					<documentation>
+						Código do Serviço - Código RMS do Serviço
+					</documentation>
+				</annotation>
+				<simpleType>
+					<restriction base="int"> 
+						<maxInclusive value="999999999"/>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name="codFornc" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>
+						Código Fornecedor - (a definir entre SVA/CVA/PDV. Premissa: valor entre 0 e 999)
+					</documentation>
+				</annotation>
+				<simpleType>
+					<restriction base="int"> 
+						<maxInclusive value="999"/>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name="qtde" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>
+						Quantidade - Quantidade vendida do Recebimento.
+					</documentation>
+				</annotation>
+				<simpleType>
+					<restriction base="int"> 
+						<maxInclusive value="999"/>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name="vlrUnit" type="decimal" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>
+						Valor Unitário - Preço Unitário do Recebimento.
+					</documentation>
+				</annotation>
+			</element>
+
+			<element name="vlrTot"  type="decimal"  minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>
+						Valor Total - Valor Total do Recebimento. (Quantidade * Valor unitário)
+					</documentation>
+				</annotation>
+			</element>
+
+			<element name="qtdeFormPagto" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>
+						Quantidade de Formas de Pagamento - Número de Formas de Pagamento utilizada para finalização da transação no PDV
+					</documentation>
+				</annotation>
+				<simpleType>
+					<restriction base="int"> 
+						<maxInclusive value="999"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+			<element name="catFormPagto" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>
+						Categora da Forma de Pagamento - Categoria da forma de pagamento. Preenchimento de acordo com a tabela “Classificação de Recebimento”.
+					</documentation>
+				</annotation>
+				<simpleType>
+					<restriction base="string"> 
+						<maxLength value="2"/>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name="formPagto" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>
+						Forma de Pagamento - Descrição da Forma de Pagamento
+					</documentation>
+				</annotation>
+				<simpleType>
+					<restriction base="string"> 
+						<maxLength value="20"/>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name="vlrFormPagto" type="decimal" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>
+						Valor Total por forma de pagamento - Valor total do rateio por forma de pagamento
+					</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+</schema>

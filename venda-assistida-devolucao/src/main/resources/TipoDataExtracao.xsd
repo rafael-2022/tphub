@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.dieboldnixdorf.com/frentecaixa/TipoDataExtracao" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.dieboldnixdorf.com/frentecaixa/TipoDataExtracao">
+
+    <complexType name="DataExtracaoType">
+    	<sequence>
+			<element name="dataExtracao" type="dateTime" minOccurs="1"
+				maxOccurs="1">
+				<annotation>
+					<documentation>
+						Data e hora do processamento.
+					</documentation>
+				</annotation>
+			</element>
+		</sequence>
+    </complexType>
+</schema>

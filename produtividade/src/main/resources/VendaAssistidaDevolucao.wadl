@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://wadl.dev.java.net/2009/02" xmlns:tcll="http://www.dieboldnixdorf.com/frentecaixa">
+	<doc title="Venda Assistida Devolucao - REST Service WADL" />
+	<grammars>
+		<include href="schema/vendaAssistidaDevolucaoMessageTypeCollection" />
+	</grammars>
+	<resources base="http://localhost:7070/">
+		<resource
+			path="/venda-assistida-devolucao/{codigoLoja}/{dataExtracao}/{paginaInicial}/{paginaFinal}">
+
+			<method id="vendaAssistidaDevolucao" name="GET">
+				<response status="200">
+					<representation
+						xmlns:trncll="http://www.dieboldnixdorf.com/schema/vendaAssistidaDevolucaoMessageTypeCollection"
+						element="trncll:vendaAssistidaDevolucaoMessageTypeCollection"
+						mediaType="application/json" />
+				</response>
+			</method>
+
+			<param name="codigoLoja" style="template" type="xs:string"
+				required="true" />
+			<param name="dataExtracao" style="template" type="xs:date"
+				required="true" />
+			<param name="paginaInicial" style="template" type="xs:int"
+				required="true" />
+			<param name="paginaFinal" style="template" type="xs:int"
+				required="true" />
+				
+			<param name="MAC" style="header" required="true" default="">
+          <doc/>
+      </param>
+		</resource>
+	</resources>
+</application>
